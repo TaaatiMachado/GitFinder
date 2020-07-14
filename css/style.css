@@ -72,31 +72,12 @@ button:hover{
 }
 .divContent img{
     
-    width: 350px;
+    width: 550px;
     opacity: 100%;
     padding: 80px;
 
 }
 
-footer {
-    font-family: 'Poiret One', cursive;
-    font-size: 18px;
-    background-color: #24292e;
-    color: rgba(255, 255, 255, 0.712);
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    flex-flow: column;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding: 10px;
-    
-
-   
-        
-}
 
 #profile {
     width: 100%;
@@ -127,7 +108,33 @@ footer {
 
 }
 
+#userRepos {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 20px;
+    color: #24292e;
+    box-sizing: border-box;
+    padding: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
 
+}
+
+#reposImg {
+    width: 150px;
+    padding: 10px;
+    margin: 50px;
+    margin-bottom: 5px;
+    
+   
+    
+
+
+}
 
 
 @media (max-width: 768px) { 

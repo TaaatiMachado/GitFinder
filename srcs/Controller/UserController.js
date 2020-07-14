@@ -1,17 +1,15 @@
 class UserController {
-    constructor() {}
+    constructor() {throw new Error("Você não pode fazer isso!") }
 
     static getUser(url) {
-        //console.log(url)
-        
+        let divUser = document.getElementById("content");        
         let userRequest = new XMLHttpRequest(); 
         userRequest.open("GET", url);
 
         userRequest.addEventListener ("load", () => {
-
-            if (userRequest.status == 200) {
             
-            let divUser = document.getElementById("content");
+            if (userRequest.status == 200) {
+                       
             let userObj = JSON.parse(userRequest.responseText);
             
             //criando o usuário do controller
@@ -26,8 +24,9 @@ class UserController {
             divUser.innerHTML = UserView.template(gitUser.returnUser()); 
                                         
         } else {
-            //let divUser = document.getElementById("#content");
-            //divUser.innerText = "Algo deu errado. Busque novamente!"
+            divUser.innerHTML = `<div id="content" class="divContent">
+                                 <img class="imgFundo" src="img/giterro.jpg">
+                                 </div>`
         }
 
                         
