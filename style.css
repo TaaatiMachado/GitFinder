@@ -1,0 +1,155 @@
+body{
+    background-color: rgba(255, 255, 255, 0.712);
+}
+header {
+    background-color: #24292e;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 35px;
+    padding-right: 35px;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    
+
+}
+
+header img  {
+    width: 115px;
+    opacity: 90%;
+    cursor: pointer;
+    display: inline-block;
+    
+}
+h1{
+    font-family: 'Poiret One', cursive;
+    font-size: 35px;
+    text-align: center;
+    background-color: #24292e;
+    color: rgba(255, 255, 255, 0.712);
+    cursor: pointer;
+
+}
+
+.search {
+    display: flex;
+    align-items: flex-end;
+        
+}
+
+input {
+    height: 25px;
+    margin-right: 8px;
+    border-radius: 15px;
+    width: 275px;
+}
+
+button {
+    height: 30px;
+    border-radius: 15px;
+    background-color: #24292e;
+    color: rgba(255, 255, 255, 0.712);
+    width: 125px;
+
+}
+
+button:hover{
+    color: #24292e;
+    background-color: rgba(255, 255, 255, 0.712);
+    cursor: pointer;
+}
+
+.divContent {
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    
+}
+.divContent img{
+    
+    width: 350px;
+    opacity: 100%;
+    padding: 80px;
+
+}
+
+footer {
+    font-family: 'Poiret One', cursive;
+    font-size: 18px;
+    background-color: #24292e;
+    color: rgba(255, 255, 255, 0.712);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-flow: column;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 10px;
+    
+
+   
+        
+}
+
+#profile {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    color: #24292e;
+    border: 3px;
+    border-color: #24292e;
+    border-style: outset;
+    box-sizing: border-box;
+    padding: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+   
+
+}
+
+#imgProfile {
+    width: 350px;
+    border: 3px;
+    border-color: #24292e;
+    border-style: dashed;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+
+
+
+@media (max-width: 768px) { 
+    
+header {
+    flex-flow: column;
+}
+
+.search {
+    width: 90%;
+}
+
+#profile {
+    flex-flow: column;
+    text-align: center;
+}
+
+#imgProfile {
+    margin-bottom: 50px;
+    width: 75%;
+}
+
+footer {
+    display: none;
+}

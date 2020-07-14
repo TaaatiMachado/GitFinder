@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet"> 
+    <title>• GIT Finder •</title>
+    
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <div class="logo">
+                <img src="img/gitlogo.PNG">
+                <h1>GIT Finder</h1>
+                </div>
+        </a>
+
+        <div class="search">
+            <input  id="userForm"type="text" placeholder="  Insira o usuário">
+            <button id="userSearch">Procurar</button>
+        </div>
+
+    </header>
+    
+    <div id="content" class="divContent">
+        <img class="imgFundo" src="img/githome.jpg">
+    </div>
+
+    <div id="reposContent">
+
+    </div>
+</body>
+
+<footer>
+    <p> &#169 Resilia Educação | 2020</p> 
+</footer>
+
+
+<script src="srcs/Models/user.js"></script>
+<script src="srcs/Controller/UserController.js"></script>
+<script src="srcs/Views/UserView.js"></script>
+<script src="srcs/Controller/aux.js"></script>
+
+</html>
